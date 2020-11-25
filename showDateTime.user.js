@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         网页小时钟
 // @namespace    https://weirick.github.io
-// @version      1.1.0.2
+// @version      1.2.0.0
 // @description  在网页右上角显示当前时间和日期
 // @author       RCWei
 // @license      GPL-3.0
