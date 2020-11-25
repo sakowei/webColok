@@ -13,12 +13,12 @@
 
 const now = new Date();
 
-let clockHTML = '<div id="clock" style="position:fixed;top:1vw;right:8vh;display:flex;justify-content:center;align-items:center;-webkit-text-stroke:1px rgba(255,255,255,.8);font-size:4vh;color:rgba(0,144,255,.7);pointer-events:none;z-index:999999999"></div>';
+let clockHTML = '<div id="clock" style="position:fixed;top:1vw;right:8vh;display:flex;justify-content:center;font-weight:bold;align-items:center;-webkit-text-stroke:1px rgba(255,255,255,.8);font-size:4vh;color:rgba(70,130,180,.7);pointer-events:none;z-index:999999999"></div>';
 let timeBox = document.createElement('div');
 timeBox.innerHTML = clockHTML;
 $('html').append(timeBox);
 
-let dateHtml = '<div id="date" style="position:fixed;top:3vw;right:8vh;display:flex;justify-content:center;align-items:center;-webkit-text-stroke:1px rgba(255,255,255,.8);font-size:2vh;color:rgba(0,0,0,.7);pointer-events:none;z-index:999999999"></div>';
+let dateHtml = '<div id="date" style="position:fixed;top:3vw;right:8vh;display:flex;justify-content:center;align-items:center;font-size:2vh;color:rgba(40,55,71,.6);pointer-events:none;z-index:999999999"></div>';
 let dateBox = document.createElement('div');
 dateBox.innerHTML = dateHtml;
 timeBox.appendChild(dateBox);
