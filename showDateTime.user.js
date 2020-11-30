@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         网页小时钟
 // @namespace    https://weirick.github.io
-// @version      1.2.0.0
+// @version      1.2.1.0
 // @description  在网页右上角显示当前时间和日期
 // @author       RCWei
 // @license      GPL-3.0
 // @match        *://*/*
-// @run-at      document-end
+// @run-at      document-idle
 // @require      https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
 // @grant    GM_registerMenuCommand
 // ==/UserScript==
@@ -30,6 +30,7 @@ setInterval(() => {
   $('#clock').text(hour + ":" + minute) ;
 
   let year = now.getFullYear(), month = now.getMonth(), date = now.getDate();
+  month++;
   if (month < 10) month = '0' + month;
   if (date < 10) date = '0' + date;
   $('#date').text(month + '.' + date + '.' + year);
