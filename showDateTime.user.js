@@ -4,7 +4,7 @@
 // @version      1.3.0.0
 // @description  在网页右上角显示当前时间和日期
 // @author       RCWei
-// @license      GPL-3.0
+// @license      GPL
 // @match        *://*/*
 // @run-at      document-idle
 // @require      https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js
